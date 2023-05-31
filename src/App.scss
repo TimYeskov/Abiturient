@@ -1,0 +1,279 @@
+*{
+  background-color: #DFFFCC;
+  font-family: 'Inter', sans-serif;
+  h1,h2,h4,h3,img,p{
+    background-color: transparent;
+  }
+}
+header{
+  .first-row{
+    border-bottom: 0.1px solid #89cef0;
+    div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 70px;
+      
+     img{
+       width: 100px;
+       position: relative;
+    
+     }
+     .header-nav{
+       display: flex;
+       h2{
+         margin-right: 70px;
+         font-size: 18px;
+         line-height: 110%;
+         font-weight: 400
+       }
+     }
+     .header-right{
+       display: flex;
+       align-items: center;
+       .theme{
+         width: 32px;
+         height: 32px;
+       }
+       .header-right__lang{
+         display: flex;
+         align-items: center;
+         padding: 0;
+         p{
+           font-weight: 400;
+           font-size: 14px; 
+           line-height: 110%;
+         }
+         img{
+           width: 32px;
+           height: 1px;
+         }
+       }
+     }
+    }
+   button{
+    background-color: #FFB606;
+    border-radius: 5px;
+    padding: 8px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+    margin: 0;
+   }
+  }
+  .second-row{
+    display: flex;
+    justify-content: center;
+    h4{
+      padding-right: 25px;
+      padding-left: 25px;
+      border-right: 1px solid #DDDD;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+    }
+  }
+}
+main{
+  .banner{
+    margin: 0 70px;
+    // background-image:linear-gradient(to bottom,rgba(228,205,11,0%),rgb(45, 223, 110),rgba(228,205,11,0%));
+    padding: 40px 0 40px 40px;
+    border-radius: 24px;
+    background-image: linear-gradient(to right,#4CAF50,#009EE4);
+    h1{
+      background-color: transparent;
+      max-width: 718px;
+      font-weight: 400;
+      font-size: 79px;
+      color: #ffff;
+      margin-bottom: 32px;
+    }
+    p{
+      background-color: transparent;
+      max-width: 396px;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 32px;
+    }
+    button{
+      // margin-top: 80px;
+      background-color: transparent;
+      background-color: #FFB606;
+      border-radius: 10px;
+      padding: 15px;
+      font-weight: 400;
+      font-size: 23px;
+      border: none;
+    }
+  }
+}
+.lessons{
+  margin: 140px 70px 0 70px;
+  .lessons-description{
+    text-align: center;
+    div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1{
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 110%;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+    }
+    p{
+      max-width: 904px;
+      margin: 0 auto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+  .lessons-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px !important;
+    margin: 0 auto;
+    padding: 0px 80px;
+    .lessons-container__block{
+      background-color: #FFB606;
+      display: flex;
+      padding: 12px 5px;
+      justify-content: space-between !important;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      width: 240px;
+      border-radius: 8px;
+      p{
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 110%;
+        background-color: transparent;
+      }
+      img{
+        background-color: transparent;
+      }
+    }
+    .lessons-container__block:not(:nth-child(4n)){
+      margin-right: 16px
+    };
+    
+  }
+}
+.about{
+   padding: 140px 70px;
+   display: flex;
+   background-image:linear-gradient(to bottom,rgba(228,205,11,0%),rgba(228,205,11,10%),rgba(32, 226, 39, 0.5),rgba(0,158,228,50%),rgba(228,205,11,10%));
+  .about-container__left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 117px;
+    background-color: transparent;
+    .container-left__block{
+      margin-bottom: 40px;
+      background-color: transparent;
+      img{
+        width: 91px;
+        margin-bottom: 14px;
+      }
+      h4{
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 110%;
+        max-width: 187px;
+        margin: 0;
+        margin-bottom: 14px;
+        background-color: transparent;
+      }
+      p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 110%;
+        max-width: 250px;
+        margin: 0;
+        background-color: transparent;
+      }
+    }
+  }
+  .about-container__right{
+     background-color: #FE2F80;
+     padding: 24px 24px 0px 24px;
+     border-radius: 8px;
+     position: relative;
+    div{
+      background-color: transparent;
+      text-align: center;
+      margin: 24px;
+      h1{
+        background-color: transparent;
+        margin: 0;
+      }
+      p{
+        margin: 0;
+        background-color: transparent;
+      }
+    }
+    h4{
+      background-color: transparent;
+    }
+    img{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+.trial{
+  background-image: linear-gradient( rgba(228,205,11,0.1), rgba(228,205,11,10%),rgba(0,158,228,50%),rgba(76,175,80,1));
+  padding: 73px 58px;
+  h4,h2{
+    margin: 0;
+  }
+  h4{
+    margin: 0 auto;
+    max-width: 900px;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 48px;
+    color: black;
+  }
+  .trial-container{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    .trial-container__block{
+      background-color: transparent;
+      background-image: url(./img/sinaqBG.png);
+      width: 399px;
+      height: 416px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      div{
+        background-color: transparent;
+        box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.1), 0 0 10px 6px rgba(255, 255, 255, 0.08);
+        border-radius: 5px;
+        div{
+          background-color: transparent;
+          flex-direction: column;
+          padding: 36px 76px;
+           h2{
+            font-weight: 800;
+            font-size: 17px;
+            line-height: 130%;
+           }
+        }
+      }
+    }
+  }
+}
