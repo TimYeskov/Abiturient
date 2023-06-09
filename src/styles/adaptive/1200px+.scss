@@ -1,0 +1,22 @@
+@media (min-width: 1200px) {
+  .App {
+    main {
+      .about {
+        .about-container {
+          padding-left: 70px;
+          padding-right: 70px;
+          .container__block {
+            margin-right: 0;
+          }
+        }
+      }
+      .lessons {
+        .lessons-container {
+          .lessons-container__block {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}

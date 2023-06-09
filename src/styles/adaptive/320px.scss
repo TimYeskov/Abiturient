@@ -1,0 +1,215 @@
+@media (max-width: "320px") {
+  .App {
+    overflow: hidden;
+    header {
+      .rows {
+        .first-row {
+          padding: 5px 10px;
+          div {
+            img {
+              width: 15px;
+              height: 15px;
+            }
+            .header-nav {
+              li {
+                font-size: 5px;
+              }
+              li:not(:last-child) {
+                margin-right: 20px;
+              }
+            }
+            .header-right {
+              .theme {
+                width: 10px;
+                height: 10px;
+              }
+              .header-right__lang {
+                li {
+                  font-size: 5px;
+                }
+                img {
+                  width: 20px !important;
+                  position: relative;
+                  top: 2px;
+                }
+              }
+              .header-btn {
+                font-size: 4px !important;
+                border-radius: 2px !important;
+                padding-top: 5px !important;
+              }
+            }
+          }
+        }
+        .second-row {
+          li {
+            font-size: 5px;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+    main {
+      .banner {
+        border-radius: 15px;
+        .banner__title {
+          font-size: 16px !important;
+        }
+        h2 {
+          margin-top: 5px !important;
+          margin-bottom: 0 !important;
+        }
+        button {
+          border-radius: 3px !important;
+          font-size: 5px !important;
+          margin-bottom: 0 !important;
+        }
+      }
+      .lessons {
+        .lessons-description {
+          div {
+            h2 {
+              font-size: 13px;
+              font-weight: 400;
+            }
+          }
+          h3 {
+            font-size: 8px;
+          }
+        }
+        .lessons-container {
+          .lessons-container__block {
+            width: 70px;
+
+            h4 {
+              font-size: 5px;
+            }
+          }
+        }
+      }
+      .about {
+        h2 {
+          font-size: 13px;
+          font-weight: 400;
+        }
+        .about-container {
+          .container__block {
+            border-radius: 10px;
+            h3 {
+              font-size: 8px;
+            }
+            h4 {
+              font-size: 5px;
+            }
+          }
+          .container__block:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .trial {
+        .trial-header {
+          h2 {
+            font-size: 13px;
+            font-weight: 400;
+          }
+          div {
+            .trial-header__all {
+              font-size: 8px;
+              font-weight: 400;
+            }
+            img {
+              width: 10px;
+            }
+          }
+        }
+        h3 {
+          font-size: 8px;
+        }
+        .trial-container {
+          .trial-container__block {
+            width: 71px;
+            height: 71px;
+            div {
+              div {
+                padding: 8px;
+                h4 {
+                  font-size: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .bloq {
+        .bloq-header {
+          h2 {
+            font-size: 13px;
+            font-weight: 400;
+          }
+          div {
+            .bloq-header__all {
+              font-size: 8px;
+              font-weight: 400;
+            }
+            img {
+              width: 10px;
+            }
+          }
+        }
+        .bloq-container {
+          .bloq-container__block {
+            max-width: 70px;
+            .bloqImg {
+              width: 71px;
+            }
+            h3 {
+              font-size: 8px;
+              height: 20px;
+            }
+            .bloq__type {
+              font-size: 5px;
+              border-radius: 5px;
+              padding: 3px;
+            }
+            .bloq-type__desc {
+              font-size: 5px;
+              height: 55px;
+              width: 70px;
+            }
+            .bloq__data {
+              align-items: center;
+              img {
+                width: 13px;
+              }
+              h4 {
+                font-size: 5px;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      padding: 5px 10px !important;
+
+      text-align: center;
+      .footer-container {
+        justify-content: space-between;
+
+        .footer-container__block {
+          h3 {
+            font-size: 8px !important;
+          }
+          h4 {
+            font-size: 5px !important;
+          }
+        }
+        .footer-container__block:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@media (max-width: 1200px) {
+  .App {
+    main {
+      .banner {
+        padding-top: 10px;
+        .banner__title {
+          font-size: 59px !important;
+          max-width: 518px !important;
+        }
+      }
+      .lessons {
+        .lessons-description {
+          div {
+            h2 {
+              font-size: 42px;
+              margin-bottom: 70px;
+            }
+          }
+          h3 {
+            font-size: 15px;
+            max-width: 784px;
+          }
+        }
+        .lessons-container {
+          .lessons-container__block:not(:nth-child(4)):not(:nth-child(5)) {
+            margin-bottom: 35px;
+            margin-right: 0;
+          }
+          @media (max-width: 1112px) {
+            .lessons-container__block:not(:last-child) {
+              margin-bottom: 35px;
+            }
+          }
+        }
+      }
+      .about {
+        h2 {
+          font-size: 42px;
+          margin: 0;
+        }
+        .about-container {
+          padding: 0 70px;
+          padding-bottom: 100px;
+          .container__block {
+            margin-right: 10px;
+            max-width: 350px;
+            img {
+              margin-bottom: 21px;
+            }
+            h3 {
+              margin: 0px;
+            }
+            h4 {
+              max-width: 300px;
+              margin-bottom: 20px;
+              font-size: 13px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .trial {
+        padding: 70px;
+        .trial-header {
+          margin-bottom: 70px;
+          h2 {
+            font-size: 42px;
+          }
+        }
+        h3 {
+          font-size: 15px;
+        }
+        .trial-container {
+          .trial-container__block {
+            max-width: 250px;
+            height: 300px;
+            text-align: center;
+            padding-left: 15px;
+
+            div {
+              div {
+                padding: 20px 41px;
+              }
+            }
+          }
+        }
+      }
+      .bloq {
+        .bloq-header {
+          margin-bottom: 70px;
+          h2 {
+            font-size: 42px;
+          }
+        }
+        .bloq-container {
+          .bloq-container__block {
+            max-width: 265px;
+            h3 {
+              font-size: 16px;
+            }
+            .bloq-type__desc {
+              font-size: 14px;
+              height: 112px;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      .footer-container {
+        .footer-container__block {
+          h3 {
+            font-size: 13px !important;
+          }
+          h4 {
+            font-size: 10px !important;
+          }
+          img {
+            width: 50px !important;
+          }
+          .footer-about {
+            max-width: 300px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
