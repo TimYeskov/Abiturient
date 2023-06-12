@@ -1,53 +1,3 @@
-:root {
-  --color-background: linear-gradient(
-    to right,
-    rgb(76, 175, 80, 100%),
-    rgb(0, 158, 228, 100%)
-  );
-  --color-border__header: rgb(255, 255, 255);
-  --color-font__title: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
-  --color-font__mainTitle: rgb(57, 185, 57);
-  --color-background__banner: #ebdbfc;
-  --color-font__banner: black;
-  --color-font__header__all: black;
-  // --color-font__description: white;
-  // --color-font__header:white;
-  --color-font__about: black;
-  --color-background__about: #ffe2c9;
-  --color-background__aboutBlock: linear-gradient(
-    to right,
-    rgb(255, 255, 255, 100%),
-    rgb(255, 255, 255, 100%)
-  );
-  --color-font__footer: black;
-  --color-background__footer: white;
-}
-
-html[data-theme="dark"] {
-  --color-background: linear-gradient(
-    to right,
-    rgb(0, 0, 0, 100%),
-    rgb(5, 44, 61, 100%)
-  );
-  --color-border__header: linear-gradient(to right, #9845e8, #33d2ff, #dd5789);
-  --color-font__title: white;
-  --color-font__mainTitle: white;
-  --color-background__banner: #06010c;
-  --color-font__banner: white;
-  --color-font__header__all: linear-gradient(#9845e8, #33d2ff, #dd5789);
-  // --color-font__description: white;
-  // --color-font__header:white;
-  --color-font__about: white;
-  --color-background__about: #06010c;
-  --color-background__aboutBlock: linear-gradient(
-    to right,
-    rgb(0, 0, 0, 100%),
-    rgb(23, 16, 24, 100%)
-  );
-  --color-font__footer: white;
-  --color-background__footer: black;
-}
-
 * {
   font-family: "Inter", sans-serif;
 
@@ -130,6 +80,7 @@ html[data-theme="dark"] {
             color: #000;
             font-weight: 300;
             margin-top: 16px;
+            cursor: pointer;
           }
         }
       }
@@ -144,39 +95,6 @@ html[data-theme="dark"] {
         text-transform: uppercase;
         font-size: 13px;
         font-weight: 800;
-      }
-    }
-    .navbar-header {
-      display: none;
-      .hamburger-lines {
-        display: block;
-        height: 20px;
-        width: 20px;
-        // position: absolute;
-        // top: 17px;
-        // left: 20px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .line {
-          display: block;
-          height: 4px;
-          width: 100%;
-          border-radius: 10px;
-          background: #0e2431;
-        }
-        .line1 {
-          transform-origin: 0% 0%;
-          transition: transform 0.4s ease-in-out;
-        }
-        .line2 {
-          transition: transform 0.2s ease-in-out;
-        }
-        .line3 {
-          transform-origin: 0% 100%;
-          transition: transform 0.4s ease-in-out;
-        }
       }
     }
   }
@@ -524,6 +442,7 @@ html[data-theme="dark"] {
     }
   }
 }
+@import url(./ThemeColors.scss);
 @import url(./adaptive/1200px+.scss) screen;
 @import url(./adaptive/media.scss) screen;
 @import url(./adaptive/992px.scss) screen;

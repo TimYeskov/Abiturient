@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles/App.scss";
 // import "./styles/adaptive/480px.scss";
 // import "./styles/adaptive/768px.scss";
@@ -22,28 +22,21 @@ import bloqImg3 from "./img/bloq_image3.png";
 import bloqDataIcon from "./img/bloqDataIcon.svg";
 
 import aboutIcon from "./img/aboutIcon.svg";
+
 import { useColorTheme } from "./hooks/useColorTheme";
+import { Login } from "./Components/Login";
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "visible";
-    }
-  }, [isMenuOpen]);
-
   const { colorTheme, toggleColorTheme } = useColorTheme();
 
   const onChangeTheme = () => {
     toggleColorTheme();
   };
+
+  const [login, openLogin] = useState(false);
+
   return (
     <div className="App">
+      {login && <Login openLogin={openLogin} colorTheme={colorTheme} />}
       <header>
         <div className="rows">
           <div className="first-row">
@@ -66,7 +59,9 @@ function App() {
                   <img src={themeLine} />
                   <li>RU</li>
                 </ul>
-                <button className="header-btn">qeydiyyat/giriş</button>
+                <button className="header-btn" onClick={() => openLogin(true)}>
+                  qeydiyyat/giriş
+                </button>
               </div>
             </div>
           </div>
@@ -78,7 +73,7 @@ function App() {
             <li>Kimya</li>
           </ul>
         </div>
-        <div className="navbar-header">
+        {/* <div className="navbar-header">
           <div className="navbar-header__div">
             <img src={logo} alt="logo" />
             <div class="hamburger-lines" onClick={toggleMenu}>
@@ -123,7 +118,7 @@ function App() {
               </ul>
             </nav>
           </div>
-        </div>
+        </div> */}
       </header>
       <main>
         <section className="banner">

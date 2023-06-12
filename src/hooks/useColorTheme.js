@@ -18,6 +18,5 @@ export const useColorTheme = () => {
       ? changeColorTheme(COLOR_THEME.dark)
       : changeColorTheme(COLOR_THEME.light);
   }, [colorTheme, changeColorTheme]);
-  console.log(colorTheme);
   return { colorTheme, changeColorTheme, toggleColorTheme };
 };
