@@ -1,8 +1,8 @@
 :root {
   --color-background: linear-gradient(
     to right,
-    rgb(76, 175, 80, 100%),
-    rgb(0, 158, 228, 100%)
+    rgb(20, 134, 23),
+    rgb(12, 58, 78)
   );
   --color-border__header: rgb(255, 255, 255);
   --color-font__title: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
@@ -13,7 +13,7 @@
   // --color-font__description: white;
   // --color-font__header:white;
   --color-font__about: black;
-  --color-background__about: #ffe2c9;
+  --color-background__about: #d4a175;
   --color-background__aboutBlock: linear-gradient(
     to right,
     rgb(255, 255, 255, 100%),
