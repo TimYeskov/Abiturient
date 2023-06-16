@@ -1,0 +1,18 @@
+@media (max-width: 900px) {
+  .App {
+    .signup {
+      header {
+        padding: 0 40px;
+      }
+      main {
+        .signup__wrapper {
+          .wrapper__left {
+            .left__block {
+              padding: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
