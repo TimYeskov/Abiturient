@@ -1,4 +1,5 @@
 :root {
+  //Home
   --color-background: linear-gradient(
     to right,
     rgb(20, 134, 23),
@@ -21,13 +22,20 @@
   );
   --color-font__footer: black;
   --color-background__footer: white;
-
+  //login
   --color-background__login: white;
-  --color-font__login: #0e55a7;
   --color-border__login: #4caf50;
+  //signup
+  --color-background__signup: #f9f9fb;
+  --color-font__signup: black;
+  --color-background__form: white;
+  --color-font__form: black;
+  --color-border__input: #0e55a7;
+  --color-border__inputFocus: rgb(76, 175, 80);
 }
 
 html[data-theme="dark"] {
+  //main
   --color-background: linear-gradient(
     to right,
     rgb(0, 0, 0, 100%),
@@ -39,8 +47,6 @@ html[data-theme="dark"] {
   --color-background__banner: #06010c;
   --color-font__banner: white;
   --color-font__header__all: linear-gradient(#9845e8, #33d2ff, #dd5789);
-  // --color-font__description: white;
-  // --color-font__header:white;
   --color-font__about: white;
   --color-background__about: #06010c;
   --color-background__aboutBlock: linear-gradient(
@@ -50,8 +56,16 @@ html[data-theme="dark"] {
   );
   --color-font__footer: white;
   --color-background__footer: black;
-
-  --color-background__login: #06010c;
+  //login
+  --color-background__login: #0b1115;
   --color-font__login: white;
-  --color-border__login: linear-gradient(to right, #9845e8, #33d2ff, #dd5789);
+  --color-border__login: #bc7ef9;
+
+  //signup
+  --color-background__signup: #0b1115;
+  --color-font__signup: white;
+  --color-background__form: black;
+  --color-font__form: white;
+  --color-border__input: white;
+  --color-border__inputFocus: #bc7ef9;
 }

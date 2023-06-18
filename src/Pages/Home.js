@@ -19,9 +19,8 @@ import aboutIcon from "../img/aboutIcon.svg";
 import { useColorTheme } from "../hooks/useColorTheme";
 import { Login } from "../Components/Login";
 import { Link } from "react-router-dom";
-function Home() {
-  const { colorTheme, toggleColorTheme } = useColorTheme();
-
+import SignUp from "./SIgnUp";
+function Home({ colorTheme, toggleColorTheme }) {
   const onChangeTheme = () => {
     toggleColorTheme();
   };
@@ -30,6 +29,7 @@ function Home() {
 
   return (
     <>
+      {console.log("home", colorTheme)}
       {login && <Login openLogin={openLogin} colorTheme={colorTheme} />}
       <header>
         <div className="rows">
@@ -59,7 +59,7 @@ function Home() {
                 >
                   giriş
                 </button>
-                <Link to="./signup">
+                <Link to="/signup">
                   <button className="header-btn signup">qeydiyyat</button>
                 </Link>
               </div>

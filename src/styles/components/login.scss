@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Прозрачный черный цвет */
+  background-color: rgba(0, 0, 0, 0.8); /* Прозрачный черный цвет */
   z-index: 9998; /* Устанавливаем высокий z-index, чтобы затемнение было поверх остальных элементов */
 }
 .container {
@@ -42,7 +42,7 @@
       text-align: center;
       font-size: 29px;
       padding-bottom: 19px;
-      border-bottom: 1px solid #4caf50;
+      border-bottom: 1px solid var(--color-border__login);
       margin-bottom: 19px;
     }
   }
@@ -73,14 +73,14 @@
           border-radius: 9px;
           padding: 12px;
           padding-right: 80px;
-          border: 2px solid #0e55a7;
+          border: 2px solid var(--color-border__input);
           margin-bottom: 19px;
           font-size: 16px;
           box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
           transition: border-color 0.2s;
         }
         input:focus {
-          border-color: #4caf50;
+          border-color: var(--color-border__inputFocus);
           border-width: 2px;
           border-style: solid;
           outline: none;
@@ -92,7 +92,7 @@
         display: flex;
         flex-direction: column;
         padding-bottom: 15px;
-        border-bottom: 2px solid #4caf50;
+
         .nameSurname {
           display: flex;
           justify-content: space-between;
@@ -207,7 +207,7 @@
       align-items: center;
       font-weight: 400;
       padding-bottom: 25px;
-      border-bottom: 1px solid #4caf50;
+      border-bottom: 1px solid var(--color-border__login);
       span {
         font-weight: 700;
         color: #4caf50;

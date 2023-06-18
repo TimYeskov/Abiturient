@@ -67,6 +67,10 @@
               height: 1px;
               position: relative;
             }
+            a {
+              padding: 0;
+              width: fit-content;
+            }
           }
           .header-btn {
             background-color: rgb(255, 179, 16);
