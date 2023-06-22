@@ -13,6 +13,9 @@ import bloqImg1 from "../img/bloq_image1.png";
 import bloqImg2 from "../img/bloq_image2.png";
 import bloqImg3 from "../img/bloq_image3.png";
 import bloqDataIcon from "../img/bloqDataIcon.svg";
+import span from "../img/span.svg";
+import vector from "../img/vector.svg";
+import feedback from "../img/feedback.png";
 
 import aboutIcon from "../img/aboutIcon.svg";
 
@@ -73,82 +76,72 @@ function Home({ colorTheme, toggleColorTheme }) {
             <li>Kimya</li>
           </ul>
         </div>
-        {/* <div className="navbar-header">
-          <div className="navbar-header__div">
-            <img src={logo} alt="logo" />
-            <div class="hamburger-lines" onClick={toggleMenu}>
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>
-          </div>
-
-          <div className={`navbar-wrapper ${isMenuOpen ? "active" : ""}`}>
-            <nav className="navbar">
-              <button>qeydiyyat/giriş</button>
-              <ul className="menu">
-                <li>Sınaq</li>
-                <li>Bloq</li>
-                <li>Contact</li>
-
-                <div class="select animated zoomIn">
-                  <input type="radio" name="option" />
-                  <i class="toggle icon icon-arrow-down"></i>
-                  <i class="toggle icon icon-arrow-up"></i>
-                  <span class="placeholder">Choose...</span>
-                  <label class="option">
-                    <input type="radio" name="option" />
-                    <span class="title animated fadeIn">
-                      <i class="icon icon-speedometer"></i>Speedometer
-                    </span>
-                  </label>
-                  <label class="option">
-                    <input type="radio" name="option" />
-                    <span class="title animated fadeIn">
-                      <i class="icon icon-fire"></i>Fire
-                    </span>
-                  </label>
-                  <label class="option">
-                    <input type="radio" name="option" />
-                    <span class="title animated fadeIn">
-                      <i class="icon icon-badge"></i>Badge
-                    </span>
-                  </label>
-                </div>
-              </ul>
-            </nav>
-          </div>
-        </div> */}
       </header>
       <main>
         <section className="banner">
-          <h1 className="banner__title">Онлайн-занятия по подготовке к ЕГЭ</h1>
-          <h2>
-            Поможем показать свой максимум на экзамене и набрать 85+ баллов
-          </h2>
-          <button>Lorem Ipsum</button>
+          <div className="banner__wrapper">
+            <h1 className="banner__title">
+              Доступные онлайн занятия для успешной подготовки к TQDK!
+            </h1>
+            <h2>
+              Достижение 500+ баллов: сделаем это вместе с нашими онлайн
+              курсами!
+            </h2>
+            <button>Lorem Ipsum</button>
+          </div>
+          <div className="banner__about">
+            <div className="banner-about__wrapper">
+              <h4>01</h4>
+              <h3>
+                Пройдите регистрацию, выбрав подходящую группу для получения
+                детальной статистики.
+              </h3>
+            </div>
+            <div className="banner-about__wrapper">
+              <h4>02</h4>
+              <h3>
+                Выберите предмет, который вас интересует, и начните
+                интерактивное обучение.
+              </h3>
+            </div>
+            <div className="banner-about__wrapper">
+              <h4>03</h4>
+              <h3>
+                Проверьте свои знания, проходя пробные экзамены, чтобы оценить
+                свои результаты
+              </h3>
+            </div>
+            <div className="banner-about__wrapper">
+              <h4>04</h4>
+              <h3>
+                Наслаждайтесь приятным и простым интерфейсом для легкого
+                обучения и отличных результатов.
+              </h3>
+            </div>
+          </div>
         </section>
+
         <section className="lessons">
           <div className="lessons-description">
             <div>
-              <h2>Lorem ipsum lorem,Lorem ipsum lorem</h2>
+              <h2>Выбери предмет. Начни свою подготовку!</h2>
             </div>
             <h3>
-              JavaRush — это онлайн-курс обучения программированию на Java,
-              который на 80% состоит из практики/JavaRush — это онлайн-курс
-              обучения программированию на Java, который на 80% состоит из
-              практики/JavaRush — это онлайн-курс обучения программированию на
-              Java, который на 80% состоит из практики
+              В данном разделе представлен список доступных предметов, для
+              подготовки к которым мы предлагаем материалы. Выберите
+              интересующую вас область и приступайте к подготовке. Наши курсы
+              предоставляют полезный интерактивный контент, руководства и
+              практические задания, которые помогут вам успешно освоить
+              выбранную область. Готовьтесь к экзаменам в удобном темпе и
+              изучайте дисципоины, наиболее полезные именно для вас. Сделайте
+              выбор и начните свой путь к успеху уже сегодня!
             </h3>
           </div>
           <div className="lessons-container">
             <div
               className="lessons-container__block"
               style={{
-                background:
-                  colorTheme === "dark"
-                    ? "linear-gradient(to bottom, rgb(11, 71, 223, 80%), rgb(24, 34, 34, 0%))"
-                    : "#FFB606",
+                background: "var(--color-background__Riyaziyyat)",
                 color: colorTheme === "dark" ? "white" : "black",
               }}
             >
@@ -162,7 +155,7 @@ function Home({ colorTheme, toggleColorTheme }) {
                 background:
                   colorTheme === "dark"
                     ? "linear-gradient(to bottom, rgb(0, 137, 14, 80%), rgb(29, 11, 11, 0%))"
-                    : "#FED6F4",
+                    : "linear-gradient(to bottom, rgb(255,242,224,1), rgb(0, 102, 22, 0%))",
                 color: colorTheme === "dark" ? "white" : "black",
               }}
             >
@@ -176,7 +169,7 @@ function Home({ colorTheme, toggleColorTheme }) {
                 background:
                   colorTheme === "dark"
                     ? "linear-gradient(to bottom, rgb(57, 2, 45, 80%), rgb(139, 11, 11, 0%))"
-                    : "#E3FF4F",
+                    : "linear-gradient(to bottom, rgb(228,251,255,100%), rgb(0, 102, 22, 0%))",
                 color: colorTheme === "dark" ? "white" : "black",
               }}
             >
@@ -190,7 +183,7 @@ function Home({ colorTheme, toggleColorTheme }) {
                 background:
                   colorTheme === "dark"
                     ? "linear-gradient(to bottom, rgb(26, 190, 161, 80%), rgb(8, 6, 20, 0%))"
-                    : "#1D8AFE",
+                    : "linear-gradient(to bottom, rgb(242,255,189,100%), rgb(0, 102, 22, 0%))",
                 color: colorTheme === "dark" ? "white" : "black",
               }}
             >
@@ -204,7 +197,7 @@ function Home({ colorTheme, toggleColorTheme }) {
                 background:
                   colorTheme === "dark"
                     ? "linear-gradient(to bottom, rgb(72, 0, 165, 80%), rgb(12, 19, 13, 0%))"
-                    : "#FFB606",
+                    : "linear-gradient(to bottom, rgb(255,217,154,100%), rgb(0, 102, 22, 0%))",
                 color: colorTheme === "dark" ? "white" : "black",
               }}
             >
@@ -213,40 +206,85 @@ function Home({ colorTheme, toggleColorTheme }) {
             </div>
           </div>
         </section>
+        <section className="underBanner">
+          <div className="underBanner__wrapper">
+            <div>
+              <div>
+                <img src={span} />
+                <h3>Индивидуальное обучение</h3>
+              </div>
+
+              <h4>
+                Материалы, специально разработанные для самостоятельной
+                подготовки
+              </h4>
+            </div>
+            <div>
+              <div>
+                <img src={span} />
+                <h3>Разнообразие предметов и материалов</h3>
+              </div>
+
+              <h4>
+                Широкий спектр предметов с помощью различного контента, включая
+                практические задания
+              </h4>
+            </div>
+            <div>
+              <div>
+                <img src={span} />
+                <h3>Реалистичные пробные экзамены</h3>
+              </div>
+
+              <h4>
+                Пробные экзамены с использованием реалистичных тестовых
+                ситуаций.
+              </h4>
+            </div>
+          </div>
+        </section>
         <section className="about">
-          <h2> Почему выбирают MAXIMUM Education</h2>
+          <h2> Почему Examify?</h2>
           <div className="about-container">
-            <div className="container__block">
-              <img src={aboutIcon} alt="icon" />
-              <h3>Гарантия поступления</h3>
-              <h4>
-                Мы берем на себя юридическую ответственность за поступление
-                ученика на бюджет
-              </h4>
+            <div className="about-container__left">
+              <div className="container__block">
+                <img src={aboutIcon} alt="icon" />
+                <h3>Широкий спектр материалов для подготовки</h3>
+                <h4>
+                  ММы предлагаем обширную коллекцию учебных материалов,
+                  охватывающих все темы начиная с 8 по 11 класс.
+                </h4>
+              </div>
+              <div className="container__block">
+                <img src={aboutIcon} alt="icon" />
+                <h3>Практические пробные экзамены</h3>
+                <h4>
+                  Мы предлагаем возможность пройти практические пробные экзамены
+                  по каждому предмету, независимо от класса или группы, чтобы
+                  помочь ученикам оценить свои знания и подготовку к официальным
+                  экзаменам.
+                </h4>
+              </div>
             </div>
-            <div className="container__block">
-              <img src={aboutIcon} alt="icon" />
-              <h3>Государственная поддержка</h3>
-              <h4>
-                Оплатить обучение можно материнским капиталом, а еще вы сможете
-                вернуть до 13% от стоимости курсов через налоговый вычет
-              </h4>
-            </div>
-            <div className="container__block">
-              <img src={aboutIcon} alt="icon" />
-              <h3>Образовательная лицензия №040223</h3>
-              <h4>
-                Наши образовательные программы проверены и утверждены
-                государственными органами
-              </h4>
-            </div>
-            <div className="container__block">
-              <img src={aboutIcon} alt="icon" />
-              <h3>Гарантия возврата</h3>
-              <h4>
-                Мы вернем деньги, если в течение двух недель ученик передумал
-                заниматься с нами
-              </h4>
+            <div className="about-container__right">
+              <div className="container__block">
+                <img src={aboutIcon} alt="icon" />
+                <h3>Интерактивный подход к обучению</h3>
+                <h4>
+                  Мы используем интерактивные методы обучения, чтобы сделать
+                  изучение материала увлекательным и интересным для учеников
+                </h4>
+              </div>
+              <div className="container__block">
+                <img src={aboutIcon} alt="icon" />
+                <h3>Индивидуальная подготовка по предметам</h3>
+                <h4>
+                  Мы гордимся возможностью предоставлять индивидуальную
+                  подготовку для каждого отдельного предмета, чтобы ученики
+                  могли сосредоточиться на изучении конкретных областей и
+                  достичь максимальных результатов.
+                </h4>
+              </div>
             </div>
           </div>
         </section>
@@ -261,40 +299,122 @@ function Home({ colorTheme, toggleColorTheme }) {
               <img src={bloqBtn} alt="btn" />
             </div>
           </div>
-          <h3>
-            JavaRush — это онлайн-курс обучения программированию на Java,
-            который на 80% состоит из практики/JavaRush — это онлайн-курс
-            обучения программированию на Java, который на 80% состоит из
-            практики/JavaRush — это онлайн-курс обучения программированию на
-            Java, который на 80% состоит из практики
-          </h3>
-          <div className="trial-container">
-            <div className="trial-container__block">
-              <div style={{ backgroundColor: "#7240FC" }}>
-                <div>
-                  <img src={sinaqIcon} />
-                  <h4>Qrup Sinaq</h4>
+          <div className="trial__container">
+            <div className="container__left">
+              <h3>Проверь свои знания с пробными экзаменами.</h3>
+              <h4>
+                Предоставляем вам возможность оценить ваш текущий уровень знаний
+                и подготовиться к предстоящим экзаменам. Используйте
+                разнообразные пробные задания, которые помогут вам успешно
+                пройти проверку и достичь высоких результатов. Наша коллекция
+                тестов предлагает различные варианты, позволяя вам прокачать
+                свои навыки и уверенно выступить на экзамене. Мы стремимся
+                предоставить вам лучшую подготовку, чтобы вы достигли ваших
+                целей в области образования.
+              </h4>
+            </div>
+            <div className="container__right">
+              <div
+                className="container__right-block"
+                style={{
+                  background: colorTheme === "dark" ? "white" : "#feff99",
+                  color: colorTheme === "dark" ? "white" : "black",
+                }}
+              >
+                <div className="container__blockimg">
+                  <div style={{ backgroundColor: "#7240FC" }}>
+                    <div>
+                      <img src={sinaqIcon} />
+                      <h4>Qrup Sinaq</h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="container__wrapper">
+                  <div>
+                    <h3>
+                      Пробник
+                      <p>По группам</p>
+                    </h3>
+                    <button>
+                      выбрать пробник <img src={vector} />
+                    </button>
+                  </div>
+                  <h4>
+                    Пройдите пробный экзамен с учетом группировки по темам,
+                    чтобы обеспечить максимальную эффективность и
+                    удобство.Будьте уверены в своей подготовке с нашим пробным
+                    экзаменом.
+                  </h4>
                 </div>
               </div>
-            </div>
-            <div className="trial-container__block">
-              <div style={{ backgroundColor: "#E3FF4F" }}>
-                <div>
-                  <img src={sinaqIcon} />
-                  <h4>Qrup(sinif) sinaq</h4>
+              <div
+                className="container__right-block"
+                style={{
+                  background: colorTheme === "dark" ? "white" : "#e5cfff",
+                  color: colorTheme === "dark" ? "white" : "black",
+                }}
+              >
+                <div className="container__blockimg">
+                  <div style={{ backgroundColor: "#7240FC" }}>
+                    <div>
+                      <img src={sinaqIcon} />
+                      <h4>Qrup Sinaq</h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="container__wrapper">
+                  <div>
+                    <h3>
+                      Пробник
+                      <p>По классам</p>
+                    </h3>
+                    <button>
+                      выбрать пробник <img src={vector} />
+                    </button>
+                  </div>
+                  <h4>
+                    Пробник, адаптированный под пройденные темы по классам.
+                    Подтвердите свой прогресс и подготовьтесь к успешной сдаче
+                    официальных экзаменов.
+                  </h4>
                 </div>
               </div>
-            </div>
-            <div className="trial-container__block">
-              <div style={{ backgroundColor: "#FE5CD5" }}>
-                <div>
-                  <img src={sinaqIcon} />
-                  <h4>Fənn Sinaq</h4>
+              <div
+                className="container__right-block"
+                style={{
+                  background: colorTheme === "dark" ? "white" : "#c5fa5d",
+                  color: colorTheme === "dark" ? "white" : "black",
+                }}
+              >
+                <div className="container__blockimg">
+                  <div style={{ backgroundColor: "#7240FC" }}>
+                    <div>
+                      <img src={sinaqIcon} />
+                      <h4>Qrup Sinaq</h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="container__wrapper">
+                  <div>
+                    <h3>
+                      Пробник
+                      <p>По предметам</p>
+                    </h3>
+                    <button>
+                      выбрать пробник <img src={vector} />
+                    </button>
+                  </div>
+                  <h4>
+                    Специально разработанный пробный экзамен для каждого
+                    учебного предмета для оценки своих навыков и подготовки в
+                    конкретных областях.
+                  </h4>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
         <section className="bloq">
           <div className="bloq-header">
             <h2>
@@ -354,6 +474,23 @@ function Home({ colorTheme, toggleColorTheme }) {
                 <h4>May 16, 2023</h4>
               </div>
             </div>
+          </div>
+        </section>
+        <section className="feedback">
+          <div className="feedback__wrapper">
+            <h2>
+              Получайте лайфхаки, статьи, видео и чек-листы по обучению на почту
+            </h2>
+            <form>
+              <div>
+                <input type="text" placeholder="Имя" />
+                <input type="text" placeholder="Имя" />
+              </div>
+              <button type="submit">Получить письмо</button>
+            </form>
+          </div>
+          <div className="feedback__img">
+            <img src={feedback} alt="img" />
           </div>
         </section>
       </main>

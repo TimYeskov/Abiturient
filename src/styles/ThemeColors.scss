@@ -2,24 +2,56 @@
   //Home
   --color-background: linear-gradient(
     to right,
-    rgb(20, 134, 23),
-    rgb(12, 58, 78)
+    rgb(91, 144, 248, 100%),
+    rgb(154, 186, 244, 40%)
   );
   --color-border__header: rgb(255, 255, 255);
   --color-font__title: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
   --color-font__mainTitle: rgb(57, 185, 57);
-  --color-background__banner: #ebdbfc;
-  --color-font__banner: black;
-  --color-font__header__all: black;
-  // --color-font__description: white;
-  // --color-font__header:white;
-  --color-font__about: black;
-  --color-background__about: #d4a175;
-  --color-background__aboutBlock: linear-gradient(
+  --color-background__banner: linear-gradient(
     to right,
     rgb(255, 255, 255, 100%),
-    rgb(255, 255, 255, 100%)
+    rgb(186, 204, 249, 50%)
   );
+  --color-font__banner: black;
+  --color-font__header__all: black;
+  //underBannner
+  --color-font__underBannerH3: black;
+  --color-font__underBannerH4: white;
+  //lessons
+  --color-border__lessonsH2: linear-gradient(
+      to right,
+      rgb(15, 18, 79, 40%),
+      rgb(255, 255, 255, 40%)
+    )
+    1;
+  --color-border__lessonsRight: linear-gradient(
+      to right,
+      rgb(255, 255, 255, 40%),
+      rgb(15, 18, 79, 40%)
+    )
+    1;
+  --color-background__Riyaziyyat: linear-gradient(
+    to bottom,
+    rgb(242, 255, 189, 100%),
+    rgb(242, 255, 189, 0%)
+  );
+  //about
+  --color-font__about: white;
+  --color-background__about: #cefdb8;
+  --color-background__aboutBlock: linear-gradient(
+    to right,
+    rgb(91, 144, 248, 80%),
+    rgb(91, 144, 248, 80%),
+    rgb(206, 253, 184, 100%)
+  );
+  --color-background__aboutBlockReverse: linear-gradient(
+    to right,
+    rgb(206, 253, 184, 100%),
+    rgb(91, 144, 248, 80%),
+    rgb(91, 144, 248, 80%)
+  );
+  //footer
   --color-font__footer: black;
   --color-background__footer: white;
   //login
@@ -44,9 +76,31 @@ html[data-theme="dark"] {
   --color-border__header: linear-gradient(to right, #9845e8, #33d2ff, #dd5789);
   --color-font__title: white;
   --color-font__mainTitle: white;
-  --color-background__banner: #06010c;
+  --color-background__banner: linear-gradient(rgb(6, 1, 12), rgb(6, 1, 12));
   --color-font__banner: white;
   --color-font__header__all: linear-gradient(#9845e8, #33d2ff, #dd5789);
+  //underBanner
+  --color-font__underBannerH3: #00c100;
+  --color-font__underBannerH4: white;
+  //lessons
+  --color-border__lessonsH2: linear-gradient(
+      to right,
+      rgb(20, 134, 23),
+      rgb(12, 58, 78)
+    )
+    1;
+  --color-border__lessonsRight: linear-gradient(
+      to right,
+      rgb(12, 58, 78),
+      rgb(20, 134, 23)
+    )
+    1;
+  --color-background__Riyaziyyat: linear-gradient(
+    to bottom,
+    rgb(11, 71, 223, 80%),
+    rgb(24, 34, 34, 0%)
+  );
+  //about
   --color-font__about: white;
   --color-background__about: #06010c;
   --color-background__aboutBlock: linear-gradient(
@@ -54,6 +108,12 @@ html[data-theme="dark"] {
     rgb(0, 0, 0, 100%),
     rgb(23, 16, 24, 100%)
   );
+  --color-background__aboutBlockReverse: linear-gradient(
+    to right,
+    rgb(23, 16, 24, 100%) rgb(0, 0, 0, 100%)
+  );
+  --color-border__aboutblock: 0 0 0 2px rgb(188, 126, 249);
+  //footer
   --color-font__footer: white;
   --color-background__footer: black;
   //login

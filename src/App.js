@@ -5,6 +5,7 @@ import "./styles/App.scss";
 import "./styles/Normalize.scss";
 import Home from "./Pages/Home";
 import SignUp from "./Pages/SIgnUp";
+
 const App = () => {
   const { colorTheme, toggleColorTheme } = useColorTheme();
   return (
