@@ -1,10 +1,12 @@
-.App {
-  main {
-    .lessons {
-      .lessons-description {
-        h3 {
-          margin-left: 0;
-          max-width: 500px;
+@media (max-width: 1250px) {
+  .App {
+    main {
+      .lessons {
+        .lessons-description {
+          h3 {
+            margin-left: 0;
+            max-width: 500px;
+          }
         }
       }
     }
