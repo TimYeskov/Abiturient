@@ -671,6 +671,11 @@
           }
         }
       }
+      .feedback__img {
+        position: relative;
+        right: 70px;
+        width: 100%;
+      }
     }
   }
   footer {
@@ -710,10 +715,12 @@
     }
   }
 }
+
 @import url(./ThemeColors.scss);
-@import url(./adaptive/1200px+.scss) screen;
-@import url(./adaptive/media.scss) screen;
-@import url(./adaptive/992px.scss) screen;
-@import url(./adaptive/768px.scss) screen;
-@import url(./adaptive/510px.scss) screen;
-@import url(./adaptive/320px.scss) screen;
+
+// @import url(./adaptive/1200px+.scss) screen;
+
+// @import url(./adaptive/992px.scss) screen;
+// @import url(./adaptive/768px.scss) screen;
+// @import url(./adaptive/510px.scss) screen;
+// @import url(./adaptive/320px.scss) screen;

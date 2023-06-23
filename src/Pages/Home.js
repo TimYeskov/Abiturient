@@ -1,3 +1,5 @@
+import "../styles/adaptive/media.scss";
+import "../styles/App.scss";
 import React, { useState, useEffect } from "react";
 
 import logo from "../img/logo.png";
