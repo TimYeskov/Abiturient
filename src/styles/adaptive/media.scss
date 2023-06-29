@@ -1,14 +1,73 @@
 @media (max-width: 1250px) {
   .App {
     main {
+      .banner {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+      }
       .lessons {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
         .lessons-description {
           h3 {
-            margin-left: 0;
-            max-width: 500px;
+            margin-left: 0 !important;
+            max-width: 500px !important;
           }
         }
       }
+      .underBanner {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+        .underBanner__wrapper {
+          div {
+            width: max-content !important;
+          }
+        }
+      }
+      .about {
+        .about-container__left {
+          .container__block {
+            width: 500px !important;
+            h4,
+            h3 {
+              max-width: 500px !important;
+            }
+          }
+        }
+        .about-container__right {
+          .container__block {
+            width: 500px !important;
+            h4,
+            h3 {
+              max-width: 500px !important;
+              text-align: right !important;
+            }
+          }
+        }
+      }
+      .trial {
+        padding-left: 15px !important;
+        padding-right: 15px !important ;
+      }
+      .bloq {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+      .feedback {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        .feedback__img {
+          img {
+            @media (max-width: 1170px) {
+              width: 400px !important;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
     }
   }
 }

@@ -232,15 +232,16 @@
       padding-bottom: 100px;
       .underBanner__wrapper {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         text-align: center;
         div {
+          padding: 0 15px;
           div {
             display: flex;
             text-align: center;
             align-items: center;
             justify-content: center;
-
+            padding: 0;
             h3 {
               align-items: center;
               color: var(--color-font__underBannerH3);
@@ -251,11 +252,14 @@
             }
           }
           h4 {
-            margin-left: 40px;
             margin-top: 0;
             color: var(--color-font__underBannerH4);
             font-weight: 400;
           }
+        }
+        div:nth-child(2) {
+          border-left: 1px solid white;
+          border-right: 1px solid white;
         }
       }
     }
@@ -345,15 +349,17 @@
         margin: 0;
       }
       .about-container {
-        display: flex;
+        display: block;
         justify-content: space-between;
         padding: 0;
         flex-wrap: wrap;
         padding-bottom: 100px;
         color: var(--color-font__about);
 
-        .about-container__left,
-        .about-container__right {
+        .about-container__up,
+        .about-container__down {
+          display: flex;
+          justify-content: space-between;
           .container__block {
             background-image: var(--color-background__aboutBlock);
             // border-radius: 24px;
@@ -372,14 +378,15 @@
             }
           }
         }
-        .about-container__right {
-          .container__block {
-            text-align: right;
-            background-image: var(--color-background__aboutBlockReverse);
-          }
-        }
+
         .container__block:nth-of-type(-n + 2) {
           margin-bottom: 40px;
+        }
+        .right {
+          background-image: var(
+            --color-background__aboutBlockReverse
+          ) !important;
+          text-align: right;
         }
       }
     }
@@ -458,7 +465,7 @@
           width: 100%;
           .container__right-block {
             padding: 15px 15px;
-
+            align-items: center;
             display: flex;
             background-color: white;
             border-radius: 10px;
@@ -466,39 +473,19 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2),
               0 10px 8px rgba(0, 0, 0, 0.2);
             .container__blockimg {
-              background-image: url(../img/sinaqBG.png);
-
-              overflow: hidden;
-              background-size: contain;
-              background-repeat: no-repeat;
-              min-width: 200px;
-              min-height: 200px;
+              background-color: #7240fc;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
               align-items: center;
               justify-content: center;
-              display: flex;
+              height: 150px;
+              width: 200px;
 
-              overflow: hidden;
-              div {
-                box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.1),
-                  0 0 10px 6px rgba(255, 255, 255, 0.08);
-                border-radius: 5px;
-
-                div {
-                  flex-direction: column;
-                  padding: 10px 10px;
-                  align-items: center;
-                  text-align: center;
-
-                  img {
-                    text-align: center;
-                  }
-                  h4 {
-                    font-weight: 800;
-                    font-size: 16px;
-                    line-height: 130%;
-                    margin: 0;
-                  }
-                }
+              h4 {
+                margin: 0 auto;
+                color: white;
+                margin-top: 10px;
               }
             }
             .container__wrapper {
@@ -717,10 +704,12 @@
 }
 
 @import url(./ThemeColors.scss);
-
+@import url(../styles/adaptive/media.scss);
+@import url(../styles/adaptive/1100px.scss);
 // @import url(./adaptive/1200px+.scss) screen;
 
 // @import url(./adaptive/992px.scss) screen;
-// @import url(./adaptive/768px.scss) screen;
-// @import url(./adaptive/510px.scss) screen;
+@import url(./adaptive/800px.scss) screen;
+@import url(./adaptive/650px.scss) screen;
+@import url(./adaptive/510px.scss) screen;
 // @import url(./adaptive/320px.scss) screen;

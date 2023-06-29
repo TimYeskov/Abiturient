@@ -1,0 +1,233 @@
+@media (max-width: 800px) {
+  .App {
+    header {
+      .rows {
+        .first-row {
+          div {
+            .header__logo {
+              margin-right: 35px !important;
+            }
+            .header-right__lang {
+              margin-left: 15px !important;
+            }
+            .login,
+            .signup {
+              margin-left: 15px !important;
+            }
+            .header-nav {
+              li:not(:last-child) {
+                margin-right: 35px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    main {
+      position: relative;
+      z-index: 1;
+      .banner {
+        margin: 15px !important;
+        .banner__title {
+          font-size: 32px !important;
+          max-width: 400px !important;
+          margin-bottom: 0 !important;
+        }
+        .banner__wrapper {
+          padding: 40px 0 40px 40px !important;
+        }
+        h2 {
+          font-size: 13px !important;
+          max-width: 250px !important;
+          margin-bottom: 8px !important;
+        }
+        button {
+          padding: 5px !important;
+          font-size: 10px !important;
+          border-radius: 5px !important;
+        }
+        .banner__about {
+          .banner-about__wrapper {
+            @media (max-width: 700px) {
+              h3 {
+                max-width: 120px !important;
+                font-size: 10px !important;
+              }
+            }
+            h4 {
+              margin: 0 !important;
+            }
+          }
+        }
+      }
+      .underBanner {
+        padding-bottom: 35px !important;
+        .underBanner__wrapper {
+          h3 {
+            font-size: 13px !important;
+          }
+          h4 {
+            max-width: 180px;
+          }
+        }
+      }
+      .lessons {
+        padding: 0;
+        .lessons-description {
+          div {
+            h2 {
+              font-size: 25px;
+              margin-bottom: 35px;
+            }
+          }
+          h3 {
+            font-size: 13px;
+            margin-bottom: 20px;
+            @media (max-width: 700px) {
+              font-size: 10px !important;
+              max-width: 250px !important;
+            }
+          }
+        }
+        .lessons-container {
+          padding: 0;
+
+          .lessons-container__block {
+            width: 120px !important;
+            max-height: 50px !important;
+            justify-content: space-around;
+            text-align: center;
+            align-items: center;
+          }
+        }
+      }
+
+      .trial {
+        .trial__container {
+          display: block !important;
+          .container__left {
+            padding-right: 0 !important;
+            border-right: 0 !important;
+            align-items: center !important;
+            justify-content: center !important;
+            display: flex;
+            flex-direction: column;
+            h3 {
+              max-width: 100% !important;
+              font-size: 20px !important;
+            }
+            h4 {
+              font-size: 10px !important;
+              max-width: 100% !important;
+              text-align: center !important;
+              margin-bottom: 35px !important;
+            }
+          }
+        }
+        .container__right {
+          padding-left: 0 !important;
+          .container__right-block {
+            padding: 10px !important;
+            @media (max-width: 760px) {
+              margin-bottom: 35px !important;
+            }
+            .container__wrapper {
+              h4 {
+                width: 100% !important;
+                margin: 10px 0 !important;
+              }
+            }
+          }
+        }
+      }
+      .bloq {
+        padding: 0px 20px 35px 20px;
+        .bloq-header {
+          margin-bottom: 35px;
+          h2 {
+            font-size: 25px;
+          }
+          div {
+            .bloq-header__all {
+              font-size: 20px;
+              margin-right: 10px;
+            }
+            img {
+              width: 31px;
+            }
+          }
+        }
+        .bloq-container {
+          .bloq-container__block {
+            .bloqImg {
+              width: 140px !important;
+              img {
+                width: 100% !important;
+              }
+            }
+            h3 {
+              font-size: 16px !important;
+              max-width: 145px !important;
+            }
+            .bloq__type {
+              margin-top: 30px !important ;
+              font-size: 10px !important;
+              border-radius: 8px !important;
+            }
+            .bloq-type__desc {
+              font-size: 10px !important;
+              max-width: 145px !important;
+              height: 100px !important;
+            }
+          }
+          .bloq-container__block:not(:last-child) {
+            margin-right: 3px;
+          }
+        }
+      }
+      .feedback {
+        @media (max-width: 750px) {
+          padding: 25px !important;
+        }
+        .feedback__wrapper {
+          h2 {
+            width: 400px !important ;
+            font-size: 16px !important;
+          }
+          input {
+            padding: 10px !important;
+            width: 140px;
+          }
+        }
+        .feedback__img {
+          top: 50px !important;
+          right: 50px !important;
+          @media (max-width: 680px) {
+            right: 80px !important;
+          }
+        }
+      }
+    }
+    footer {
+      padding: 20px !important;
+
+      .footer-container {
+        flex-wrap: wrap;
+        .footer-container__block {
+          max-width: 180px;
+
+          @media (max-width: 580px) {
+            min-width: 150px;
+
+            img {
+              margin-top: 10px;
+            }
+            .footer-about {
+              width: 400px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

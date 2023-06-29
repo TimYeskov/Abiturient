@@ -1,4 +1,3 @@
-import "../styles/adaptive/media.scss";
 import "../styles/App.scss";
 import React, { useState, useEffect } from "react";
 
@@ -40,7 +39,7 @@ function Home({ colorTheme, toggleColorTheme }) {
         <div className="rows">
           <div className="first-row">
             <div>
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" className="header__logo" />
               <ul className="header-nav">
                 <li>Sinaq</li>
                 <li>Bloq</li>
@@ -116,8 +115,8 @@ function Home({ colorTheme, toggleColorTheme }) {
             <div className="banner-about__wrapper">
               <h4>04</h4>
               <h3>
-                Наслаждайтесь приятным и простым интерфейсом для легкого
-                обучения и отличных результатов.
+                Откройте увлекательный путь обучения для достижения высоких
+                результатов!
               </h3>
             </div>
           </div>
@@ -248,8 +247,8 @@ function Home({ colorTheme, toggleColorTheme }) {
         <section className="about">
           <h2> Почему Examify?</h2>
           <div className="about-container">
-            <div className="about-container__left">
-              <div className="container__block">
+            <div className="about-container__up">
+              <div className="container__block left">
                 <img src={aboutIcon} alt="icon" />
                 <h3>Широкий спектр материалов для подготовки</h3>
                 <h4>
@@ -257,34 +256,33 @@ function Home({ colorTheme, toggleColorTheme }) {
                   охватывающих все темы начиная с 8 по 11 класс.
                 </h4>
               </div>
-              <div className="container__block">
+              <div className="container__block right">
                 <img src={aboutIcon} alt="icon" />
                 <h3>Практические пробные экзамены</h3>
                 <h4>
-                  Мы предлагаем возможность пройти практические пробные экзамены
+                  Предоставляем возможность пройти практические пробные экзамены
                   по каждому предмету, независимо от класса или группы, чтобы
                   помочь ученикам оценить свои знания и подготовку к официальным
                   экзаменам.
                 </h4>
               </div>
             </div>
-            <div className="about-container__right">
-              <div className="container__block">
+            <div className="about-container__down">
+              <div className="container__block left">
                 <img src={aboutIcon} alt="icon" />
                 <h3>Интерактивный подход к обучению</h3>
                 <h4>
-                  Мы используем интерактивные методы обучения, чтобы сделать
-                  изучение материала увлекательным и интересным для учеников
+                  Используя интерактивные методы обучения, мы делаем изучение
+                  материала увлекательным и интересным для учеников.
                 </h4>
               </div>
-              <div className="container__block">
+              <div className="container__block right">
                 <img src={aboutIcon} alt="icon" />
                 <h3>Индивидуальная подготовка по предметам</h3>
                 <h4>
-                  Мы гордимся возможностью предоставлять индивидуальную
-                  подготовку для каждого отдельного предмета, чтобы ученики
-                  могли сосредоточиться на изучении конкретных областей и
-                  достичь максимальных результатов.
+                  Гарантируется индивидуальная подготовка для каждого отдельного
+                  предмета, чтобы ученики могли сосредоточиться на изучении
+                  конкретных областей и достичь максимальных результатов.
                 </h4>
               </div>
             </div>
@@ -324,12 +322,8 @@ function Home({ colorTheme, toggleColorTheme }) {
                 }}
               >
                 <div className="container__blockimg">
-                  <div style={{ backgroundColor: "#7240FC" }}>
-                    <div>
-                      <img src={sinaqIcon} />
-                      <h4>Qrup Sinaq</h4>
-                    </div>
-                  </div>
+                  <img src={sinaqIcon} />
+                  <h4>Qrup Sinaq</h4>
                 </div>
                 <div className="container__wrapper">
                   <div>
@@ -357,12 +351,8 @@ function Home({ colorTheme, toggleColorTheme }) {
                 }}
               >
                 <div className="container__blockimg">
-                  <div style={{ backgroundColor: "#7240FC" }}>
-                    <div>
-                      <img src={sinaqIcon} />
-                      <h4>Qrup Sinaq</h4>
-                    </div>
-                  </div>
+                  <img src={sinaqIcon} />
+                  <h4>Qrup Sinaq</h4>
                 </div>
                 <div className="container__wrapper">
                   <div>
@@ -389,12 +379,8 @@ function Home({ colorTheme, toggleColorTheme }) {
                 }}
               >
                 <div className="container__blockimg">
-                  <div style={{ backgroundColor: "#7240FC" }}>
-                    <div>
-                      <img src={sinaqIcon} />
-                      <h4>Qrup Sinaq</h4>
-                    </div>
-                  </div>
+                  <img src={sinaqIcon} />
+                  <h4>Qrup Sinaq</h4>
                 </div>
                 <div className="container__wrapper">
                   <div>
