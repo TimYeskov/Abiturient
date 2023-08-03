@@ -12,8 +12,7 @@
 .App {
   background-image: var(--color-background);
   header {
-    color: rgb(255, 255, 255);
-
+    color: var(--color-font);
     .first-row {
       // border-bottom: 2px solid rgb(188, 126, 249);
       border-bottom: 1px solid;
@@ -112,17 +111,16 @@
 
           .signup {
             margin-left: 20px;
-            background-color: #5e88f1;
+            background-color: var(--color-button);
             color: white;
             border: none;
           }
           .login {
-            background-color: white;
-
-            color: #5e88f1;
+            background-color: transparent;
+            color: var(--color-button__font);
             padding-left: 20px;
             padding-right: 20px;
-            border: 2px solid #5e88f1;
+            border: 2px solid var(--color-button);
           }
         }
       }
@@ -137,20 +135,24 @@
         text-transform: uppercase;
         font-size: 13px;
         font-weight: 800;
+        font-weight: 200;
+        letter-spacing: 0.3px;
       }
     }
   }
   main {
     .banner {
-      margin: 30px 35px 50px 35px;
-      border: 1px solid white;
+      margin: 100px 35px 0 35px;
+      border: 2px solid var(--color-background__bannerBorder);
 
       border-radius: 24px;
       .banner__wrapper {
-        background-image: var(--color-background__banner);
+        // background-image: var(--image-banner);
+        // background-image: url(../img/background_tablet.png);
+        background-color: var(--color-background__banner);
         padding: 80px 0 80px 40px;
         border-radius: 24px;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--color-background__bannerBorder);
 
         // border-bottom-left-radius: 0;
         // border-bottom-right-radius: 0;
@@ -172,7 +174,7 @@
       }
       button {
         // margin-top: 80px;
-        background-color: #1455ff;
+        background-color: var(--color-button);
 
         color: white;
 
@@ -220,7 +222,7 @@
             color: #cefdb8;
           }
           h3 {
-            color: white;
+            color: var(--color-font);
             font-weight: 300;
             max-width: 250px;
           }
@@ -229,7 +231,7 @@
     }
     .underBanner {
       padding: 0;
-      padding-bottom: 100px;
+      padding-bottom: 150px;
       .underBanner__wrapper {
         display: flex;
         justify-content: space-between;
@@ -244,7 +246,7 @@
             padding: 0;
             h3 {
               align-items: center;
-              color: var(--color-font__underBannerH3);
+              color: var(--color-font);
               font-weight: 300;
             }
             img {
@@ -253,19 +255,19 @@
           }
           h4 {
             margin-top: 0;
-            color: var(--color-font__underBannerH4);
+            color: var(--color-font);
             font-weight: 400;
           }
         }
         div:nth-child(2) {
-          border-left: 1px solid white;
-          border-right: 1px solid white;
+          border-left: 1px solid var(--color-background__bannerBorder);
+          border-right: 1px solid var(--color-background__bannerBorder);
         }
       }
     }
 
     .lessons {
-      margin: 100px 40px;
+      margin: 150px 40px;
 
       display: flex;
       .lessons-description {
@@ -293,7 +295,7 @@
           font-size: 17px;
           font-weight: 400;
           line-height: 150%;
-          color: white;
+          color: var(--color-font);
           margin-bottom: 35px;
         }
       }
@@ -339,13 +341,14 @@
     .about {
       background-color: var(--color-background__about);
       border-radius: 5px;
+
       h2 {
         text-align: center;
         font-size: 62px;
         font-weight: 200;
         color: var(--color-font__title);
         letter-spacing: 1px;
-        padding: 70px;
+        padding: 150px 70px;
         margin: 0;
       }
       .about-container {
@@ -353,53 +356,58 @@
         justify-content: space-between;
         padding: 0;
         flex-wrap: wrap;
-        padding-bottom: 100px;
-        color: var(--color-font__about);
+        padding-bottom: 150px;
+        color: white;
 
         .about-container__up,
         .about-container__down {
           display: flex;
           justify-content: space-between;
           .container__block {
-            background-image: var(--color-background__aboutBlock);
-            // border-radius: 24px;
             width: 600px;
             padding: 10px;
             box-shadow: var(--color-border__aboutblock);
+            color: var(--color-font);
             h3 {
-              font-weight: 800;
+              font-weight: 400;
               font-size: 23px;
             }
             h4 {
               max-width: 700px;
               font-weight: 200;
               font-size: 16px;
-              color: black;
             }
           }
         }
 
         .container__block:nth-of-type(-n + 2) {
-          margin-bottom: 40px;
+          margin-bottom: 100px;
+        }
+        .left {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
         }
         .right {
           background-image: var(
             --color-background__aboutBlockReverse
           ) !important;
           text-align: right;
+
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
         }
       }
     }
     .trial {
       // background-image: linear-gradient( rgba(0,158,228,50%),rgba(76,175,80,1));
-      padding: 100px 70px;
+      padding: 150px 70px;
       border-radius: 20px;
       // padding-top: 100px;
       // padding-bottom: 100px;
       .trial-header {
         justify-content: space-between;
         display: flex;
-        margin-bottom: 70px;
+        margin-bottom: 100px;
         color: var(--color-font__title);
         align-items: center;
         h2 {
@@ -440,8 +448,8 @@
         display: flex;
 
         .container__left {
-          border-right: 1px solid white;
-          padding-right: 35px;
+          // border-right: 1px solid var(--color-background__bannerBorder);
+          color: var(--color-font);
           h3 {
             max-width: 460px;
             font-weight: 800;
@@ -453,7 +461,6 @@
             max-width: 400px;
             font-weight: 300;
             line-height: 170%;
-            color: white;
 
             font-size: 18px;
           }
@@ -467,7 +474,7 @@
             padding: 15px 15px;
             align-items: center;
             display: flex;
-            background-color: white;
+
             border-radius: 10px;
             margin-bottom: 35px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2),
@@ -503,7 +510,7 @@
                   p {
                     margin: 0;
                     font-size: 13px;
-                    color: black;
+
                     font-weight: 400;
                   }
                 }
@@ -525,27 +532,26 @@
               h4 {
                 margin-top: 35px;
                 max-width: 500px;
-                color: rgb(44, 38, 32, 70%);
+
                 font-weight: 400;
                 font-size: 17px;
               }
             }
           }
-          .container__right-block:not(:last-child) {
-            border-bottom: 1px solid white;
-          }
+          // .container__right-block:not(:last-child) {
+          //   border-bottom: 1px solid white;
+          // }
         }
       }
     }
     .bloq {
-      padding: 100px 70px;
-
-      color: #ffff;
+      padding: 150px 70px;
+      color: var(--color-font);
       padding-top: 0;
       .bloq-header {
         justify-content: space-between;
         display: flex;
-        margin-bottom: 70px;
+        margin-bottom: 100px;
         align-items: center;
         color: var(--color-font__title);
         h2 {
@@ -597,6 +603,7 @@
             background-color: #4caf50;
             width: fit-content;
             font-weight: 300;
+            color: white;
           }
           .bloq-type__desc {
             font-weight: 200;
@@ -619,11 +626,12 @@
       }
     }
     .feedback {
-      margin: 0 70px 100px 70px;
+      margin: 0 70px 150px 70px;
       padding: 70px 90px;
       border-radius: 27px;
-      background-color: white;
+      background-color: #845ef7;
       display: flex;
+      color: white;
       .feedback__wrapper {
         h2 {
           font-size: 30px;

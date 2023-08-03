@@ -2,55 +2,60 @@
   //Home
   --color-background: linear-gradient(
     to right,
-    rgb(91, 144, 248, 100%),
-    rgb(154, 186, 244, 40%)
+    rgb(255, 255, 255),
+    rgba(255, 255, 255)
   );
-  --color-border__header: rgb(255, 255, 255);
+  --color-font: #2c2620;
+  --color-border__header: linear-gradient(
+    rgb(255, 195, 105),
+    rgb(255, 195, 105)
+  );
+  //header
+  --color-button: #fb9637;
+  --color-button__font: black;
+  //banner
   --color-font__title: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
-  --color-font__mainTitle: rgb(57, 185, 57);
-  --color-background__banner: linear-gradient(
-    to right,
-    rgb(255, 255, 255, 100%),
-    rgb(186, 204, 249, 50%)
-  );
+  --color-font__mainTitle: rgb(123, 79, 32);
+  --color-background__banner: rgb(255, 244, 230);
+  --color-background__bannerBorder: rgb(250, 150, 56);
+  --color-background__border: #ffc369;
   --color-font__banner: black;
   --color-font__header__all: black;
+  --image-banner: "url(../img/background_tablet.png)";
   //underBannner
   --color-font__underBannerH3: black;
   --color-font__underBannerH4: white;
+  --color-border--underBanner: #b9b5b5;
   //lessons
   --color-border__lessonsH2: linear-gradient(
       to right,
-      rgb(15, 18, 79, 40%),
+      rgb(250, 150, 56),
       rgb(255, 255, 255, 40%)
     )
     1;
   --color-border__lessonsRight: linear-gradient(
       to right,
       rgb(255, 255, 255, 40%),
-      rgb(15, 18, 79, 40%)
+      rgb(250, 150, 56)
     )
     1;
   --color-background__Riyaziyyat: linear-gradient(
     to bottom,
-    rgb(242, 255, 189, 100%),
-    rgb(242, 255, 189, 0%)
+    rgb(230, 246, 255),
+    rgb(230, 246, 255)
   );
   //about
-  --color-font__about: white;
-  --color-background__about: #cefdb8;
-  --color-background__aboutBlock: linear-gradient(
-    to right,
-    rgb(91, 144, 248, 80%),
-    rgb(91, 144, 248, 80%),
-    rgb(206, 253, 184, 100%)
-  );
-  --color-background__aboutBlockReverse: linear-gradient(
-    to right,
-    rgb(206, 253, 184, 100%),
-    rgb(91, 144, 248, 80%),
-    rgb(91, 144, 248, 80%)
-  );
+  // rgb(255, 248, 248)
+  --color-background__about: #e7dffd;
+  --color-back-about1: rgb(255, 228, 202);
+  --color-border-about1: rgb(251, 150, 55);
+  --color-back-about2: rgb(240, 250, 242);
+  --color-border-about2: rgb(107, 206, 129);
+  --color-back-about3: rgb(248, 215, 215);
+  --color-border-about3: rgb(239, 68, 68);
+  --color-back-about4: rgb(214, 235, 247);
+  --color-border-about4: rgb(51, 156, 74);
+
   //footer
   --color-font__footer: black;
   --color-background__footer: white;
@@ -71,48 +76,66 @@ html[data-theme="dark"] {
   --color-background: linear-gradient(
     to right,
     rgb(0, 0, 0, 100%),
-    rgb(5, 44, 61, 100%)
+    rgb(2, 20, 27)
   );
-  --color-border__header: linear-gradient(to right, #9845e8, #33d2ff, #dd5789);
+  --color-font: #ffff;
+  //header
+  --color-border__header: linear-gradient(to right, #7300ff, #7300ff, #7300ff);
+  --color-button: #7300ff;
+  --color-button__font: white;
+
+  //banner
   --color-font__title: white;
   --color-font__mainTitle: white;
-  --color-background__banner: linear-gradient(rgb(6, 1, 12), rgb(6, 1, 12));
+  --color-background__banner: rgb(27, 6, 53);
+  --color-background__bannerBorder: rgb(115, 0, 255);
+  --color-background__border: #ffff;
   --color-font__banner: white;
   --color-font__header__all: linear-gradient(#9845e8, #33d2ff, #dd5789);
+  --image-banner: "url(../img/background_tablet.png)";
   //underBanner
   --color-font__underBannerH3: #00c100;
   --color-font__underBannerH4: white;
+  --color-border--underBanner: white;
   //lessons
   --color-border__lessonsH2: linear-gradient(
       to right,
-      rgb(20, 134, 23),
-      rgb(12, 58, 78)
+      rgb(115, 0, 255, 60%),
+      rgb(12, 58, 78, 0%)
     )
     1;
   --color-border__lessonsRight: linear-gradient(
       to right,
-      rgb(12, 58, 78),
-      rgb(20, 134, 23)
+      rgb(12, 58, 78, 0%),
+      rgb(115, 0, 255)
     )
     1;
   --color-background__Riyaziyyat: linear-gradient(
     to bottom,
-    rgb(11, 71, 223, 80%),
+    rgb(11, 71, 223),
     rgb(24, 34, 34, 0%)
   );
   //about
-  --color-font__about: white;
-  --color-background__about: #06010c;
-  --color-background__aboutBlock: linear-gradient(
-    to right,
-    rgb(0, 0, 0, 100%),
-    rgb(23, 16, 24, 100%)
-  );
-  --color-background__aboutBlockReverse: linear-gradient(
-    to right,
-    rgb(23, 16, 24, 100%) rgb(0, 0, 0, 100%)
-  );
-  --color-border__aboutblock: 0 0 0 2px rgb(188, 126, 249);
+
+  // --color-background__aboutBlock: linear-gradient(
+  //   to right,
+  //   rgb(0, 0, 0, 100%),
+  //   rgb(23, 16, 24, 100%)
+  // );
+  // --color-background__aboutBlockReverse: linear-gradient(
+  //   to right,
+  //   rgb(23, 16, 24, 100%) rgb(0, 0, 0, 100%)
+  // );
+  // --color-border__aboutblock: 0 0 0 2px rgb(188, 126, 249);
+  --color-background__about: #000000;
+  --color-back-about1: rgb(20, 85, 255, 40%);
+  --color-border-about1: rgb(20, 85, 255);
+  --color-back-about2: rgb(20, 85, 255, 40%);
+  --color-border-about2: rgb(20, 85, 255);
+  --color-back-about3: rgb(20, 85, 255, 40%);
+  --color-border-about3: rgb(20, 85, 255);
+  --color-back-about4: rgb(20, 85, 255, 40%);
+  --color-border-about4: rgb(20, 85, 255);
   //footer
   --color-font__footer: white;
   --color-background__footer: black;

@@ -47,7 +47,7 @@ function Home({ colorTheme, toggleColorTheme }) {
               </ul>
               <div className="header-right">
                 <img
-                  src={colorTheme === "light" ? lightMode : darkMode}
+                  src={colorTheme === "light" ? darkMode : lightMode}
                   alt="theme"
                   className="theme"
                   onClick={onChangeTheme}
@@ -80,7 +80,15 @@ function Home({ colorTheme, toggleColorTheme }) {
       </header>
       <main>
         <section className="banner">
-          <div className="banner__wrapper">
+          <div
+            className="banner__wrapper"
+            // style={{
+            //   backgroundImage:
+            //     colorTheme === "dark"
+            //       ? "url(../img/bloq_image1.png)"
+            //       : "url(../img/background_tablet.png)",
+            // }}
+          >
             <h1 className="banner__title">
               Доступные онлайн занятия для успешной подготовки к TQDK!
             </h1>
@@ -155,8 +163,8 @@ function Home({ colorTheme, toggleColorTheme }) {
               style={{
                 background:
                   colorTheme === "dark"
-                    ? "linear-gradient(to bottom, rgb(0, 137, 14, 80%), rgb(29, 11, 11, 0%))"
-                    : "linear-gradient(to bottom, rgb(255,242,224,1), rgb(0, 102, 22, 0%))",
+                    ? "linear-gradient(to bottom, rgb(0, 137, 14, 70%), rgb(29, 11, 11, 0%))"
+                    : "linear-gradient(to bottom, rgb(255,229,229), rgb(255,229,229))",
                 color: colorTheme === "dark" ? "white" : "black",
               }}
             >
@@ -170,7 +178,7 @@ function Home({ colorTheme, toggleColorTheme }) {
                 background:
                   colorTheme === "dark"
                     ? "linear-gradient(to bottom, rgb(57, 2, 45, 80%), rgb(139, 11, 11, 0%))"
-                    : "linear-gradient(to bottom, rgb(228,251,255,100%), rgb(0, 102, 22, 0%))",
+                    : "linear-gradient(to bottom,rgb(100,182,227), rgb(100,182,227))",
                 color: colorTheme === "dark" ? "white" : "black",
               }}
             >
@@ -184,7 +192,7 @@ function Home({ colorTheme, toggleColorTheme }) {
                 background:
                   colorTheme === "dark"
                     ? "linear-gradient(to bottom, rgb(26, 190, 161, 80%), rgb(8, 6, 20, 0%))"
-                    : "linear-gradient(to bottom, rgb(242,255,189,100%), rgb(0, 102, 22, 0%))",
+                    : "linear-gradient(to bottom, rgb(220,219,231), rgb(220,219,231))",
                 color: colorTheme === "dark" ? "white" : "black",
               }}
             >
@@ -198,7 +206,7 @@ function Home({ colorTheme, toggleColorTheme }) {
                 background:
                   colorTheme === "dark"
                     ? "linear-gradient(to bottom, rgb(72, 0, 165, 80%), rgb(12, 19, 13, 0%))"
-                    : "linear-gradient(to bottom, rgb(255,217,154,100%), rgb(0, 102, 22, 0%))",
+                    : "linear-gradient(to bottom, rgb(255,217,154), rgb(255,217,154)",
                 color: colorTheme === "dark" ? "white" : "black",
               }}
             >
@@ -248,7 +256,13 @@ function Home({ colorTheme, toggleColorTheme }) {
           <h2> Почему Examify?</h2>
           <div className="about-container">
             <div className="about-container__up">
-              <div className="container__block left">
+              <div
+                className="container__block left"
+                style={{
+                  background: "var(--color-back-about1)",
+                  border: "1px solid var(--color-border-about1)",
+                }}
+              >
                 <img src={aboutIcon} alt="icon" />
                 <h3>Широкий спектр материалов для подготовки</h3>
                 <h4>
@@ -256,7 +270,13 @@ function Home({ colorTheme, toggleColorTheme }) {
                   охватывающих все темы начиная с 8 по 11 класс.
                 </h4>
               </div>
-              <div className="container__block right">
+              <div
+                className="container__block right"
+                style={{
+                  background: "var(--color-back-about2)",
+                  border: "1px solid var(--color-border-about2)",
+                }}
+              >
                 <img src={aboutIcon} alt="icon" />
                 <h3>Практические пробные экзамены</h3>
                 <h4>
@@ -268,7 +288,13 @@ function Home({ colorTheme, toggleColorTheme }) {
               </div>
             </div>
             <div className="about-container__down">
-              <div className="container__block left">
+              <div
+                className="container__block left"
+                style={{
+                  background: "var(--color-back-about3)",
+                  border: "1px solid var(--color-border-about3)",
+                }}
+              >
                 <img src={aboutIcon} alt="icon" />
                 <h3>Интерактивный подход к обучению</h3>
                 <h4>
@@ -276,7 +302,13 @@ function Home({ colorTheme, toggleColorTheme }) {
                   материала увлекательным и интересным для учеников.
                 </h4>
               </div>
-              <div className="container__block right">
+              <div
+                className="container__block right"
+                style={{
+                  background: "var(--color-back-about4)",
+                  border: "1px solid var(--color-border-about4)",
+                }}
+              >
                 <img src={aboutIcon} alt="icon" />
                 <h3>Индивидуальная подготовка по предметам</h3>
                 <h4>
@@ -317,7 +349,7 @@ function Home({ colorTheme, toggleColorTheme }) {
               <div
                 className="container__right-block"
                 style={{
-                  background: colorTheme === "dark" ? "white" : "#feff99",
+                  background: colorTheme === "dark" ? "#a77dff" : "#feff99",
                   color: colorTheme === "dark" ? "white" : "black",
                 }}
               >
@@ -346,7 +378,7 @@ function Home({ colorTheme, toggleColorTheme }) {
               <div
                 className="container__right-block"
                 style={{
-                  background: colorTheme === "dark" ? "white" : "#e5cfff",
+                  background: colorTheme === "dark" ? "#3669f6" : "#e5cfff",
                   color: colorTheme === "dark" ? "white" : "black",
                 }}
               >
@@ -374,7 +406,7 @@ function Home({ colorTheme, toggleColorTheme }) {
               <div
                 className="container__right-block"
                 style={{
-                  background: colorTheme === "dark" ? "white" : "#c5fa5d",
+                  background: colorTheme === "dark" ? "#f56c08" : "#c5fa5d",
                   color: colorTheme === "dark" ? "white" : "black",
                 }}
               >
