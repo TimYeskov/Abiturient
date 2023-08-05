@@ -451,8 +451,11 @@ function Home({ colorTheme, toggleColorTheme }) {
               <div className="bloqImg">
                 <img src={bloqImg1} />
               </div>
-              <h3>Top 10 marketinq agentlikləri</h3>
-              <div className="bloq__type">Marketing</div>
+              <div className="container__title">
+                <h3>Top 10 marketinq agentlikləri</h3>
+                <div className="bloq__type">Marketing</div>
+              </div>
+
               <h4 className="bloq-type__desc">
                 Trenders Team olaraq müxtəlif ölkələrdən 10 ən yaxşımarketinq
                 agentlikləri araşdırdıq və sizinlə bölüşürük. Onların marketinq
@@ -463,12 +466,16 @@ function Home({ colorTheme, toggleColorTheme }) {
                 <h4>May 16, 2023</h4>
               </div>
             </div>
+
             <div className="bloq-container__block">
               <div className="bloqImg">
                 <img src={bloqImg2} />
               </div>
-              <h3>Radio marketinq</h3>
-              <div className="bloq__type">Marketing</div>
+              <div className="container__title">
+                <h3>Radio marketinq</h3>
+                <div className="bloq__type">Marketing</div>
+              </div>
+
               <h4 className="bloq-type__desc">
                 Radio reklam kontentinin yazılması, uyğun kanalların seçilməsi
                 və büdcənin optimallaşdırılması üçün Trenders Team-in radio
@@ -479,12 +486,16 @@ function Home({ colorTheme, toggleColorTheme }) {
                 <h4>May 16, 2023</h4>
               </div>
             </div>
+
             <div className="bloq-container__block">
               <div className="bloqImg">
                 <img src={bloqImg3} />
               </div>
-              <h3>Tiktok xidməti ilə brendinizi tanıdın</h3>
-              <div className="bloq__type">Trend</div>
+              <div className="container__title">
+                <h3>Tiktok xidməti ilə brendinizi tanıdın</h3>
+                <div className="bloq__type">Trend</div>
+              </div>
+
               <h4 className="bloq-type__desc">
                 Tiktok xidmətimiz haqqında məlumat ətraflı məlumat alın. Tiktok
                 xidmətimizlə brendinizi tanımayan qalmasın

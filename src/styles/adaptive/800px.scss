@@ -27,7 +27,7 @@
       position: relative;
       z-index: 1;
       .banner {
-        margin: 15px !important;
+        margin-top: 50px !important;
         .banner__title {
           font-size: 32px !important;
           max-width: 400px !important;
@@ -47,45 +47,55 @@
           border-radius: 5px !important;
         }
         .banner__about {
+          margin: 35px 10px !important;
           .banner-about__wrapper {
-            @media (max-width: 700px) {
-              h3 {
-                max-width: 120px !important;
-                font-size: 10px !important;
-              }
+            h3 {
+              max-width: 150px !important;
+              font-size: 14px !important;
+            }
+          }
+          h4 {
+            margin: 0 !important;
+          }
+        }
+      }
+      .about {
+        h2 {
+          font-size: 50px !important;
+          padding: 70px !important;
+        }
+        .about-container {
+          .container__block {
+            margin-bottom: 50px !important;
+            h3 {
+              font-size: 20px !important;
             }
             h4 {
-              margin: 0 !important;
+              font-size: 14px !important;
             }
           }
         }
       }
       .underBanner {
-        padding-bottom: 35px !important;
         .underBanner__wrapper {
           h3 {
             font-size: 13px !important;
           }
           h4 {
             max-width: 180px;
+            font-size: 13px;
+
+            margin: 0 auto;
           }
         }
       }
       .lessons {
-        padding: 0;
         .lessons-description {
-          div {
-            h2 {
-              font-size: 25px;
-              margin-bottom: 35px;
-            }
-          }
           h3 {
-            font-size: 13px;
-            margin-bottom: 20px;
             @media (max-width: 700px) {
-              font-size: 10px !important;
-              max-width: 250px !important;
+              font-size: 14px !important;
+              max-width: 300px !important;
+              line-height: 150% !important;
             }
           }
         }
@@ -93,8 +103,8 @@
           padding: 0;
 
           .lessons-container__block {
-            width: 120px !important;
-            max-height: 50px !important;
+            width: 100px !important;
+            max-height: 60px !important;
             justify-content: space-around;
             text-align: center;
             align-items: center;
@@ -103,21 +113,21 @@
       }
 
       .trial {
+        .trial-header {
+        }
         .trial__container {
           display: block !important;
           .container__left {
-            padding-right: 0 !important;
-            border-right: 0 !important;
             align-items: center !important;
-            justify-content: center !important;
+
             display: flex;
             flex-direction: column;
             h3 {
               max-width: 100% !important;
-              font-size: 20px !important;
+              font-size: 25px !important;
             }
             h4 {
-              font-size: 10px !important;
+              font-size: 15px !important;
               max-width: 100% !important;
               text-align: center !important;
               margin-bottom: 35px !important;
@@ -141,7 +151,6 @@
         }
       }
       .bloq {
-        padding: 0px 20px 35px 20px;
         .bloq-header {
           margin-bottom: 35px;
           h2 {
@@ -160,10 +169,9 @@
         .bloq-container {
           .bloq-container__block {
             .bloqImg {
-              width: 140px !important;
-              img {
-                width: 100% !important;
-              }
+              width: 180px !important;
+
+              border-radius: 7px !important;
             }
             h3 {
               font-size: 16px !important;
@@ -175,9 +183,11 @@
               border-radius: 8px !important;
             }
             .bloq-type__desc {
-              font-size: 10px !important;
-              max-width: 145px !important;
-              height: 100px !important;
+              font-size: 16px !important;
+              max-width: 160px !important;
+            }
+            .bloq__data {
+              margin-top: 150px;
             }
           }
           .bloq-container__block:not(:last-child) {
@@ -200,11 +210,8 @@
           }
         }
         .feedback__img {
-          top: 50px !important;
-          right: 50px !important;
-          @media (max-width: 680px) {
-            right: 80px !important;
-          }
+          top: -20px !important;
+          right: 80px !important;
         }
       }
     }

@@ -55,7 +55,11 @@
   --color-border-about3: rgb(239, 68, 68);
   --color-back-about4: rgb(214, 235, 247);
   --color-border-about4: rgb(51, 156, 74);
-
+  --color-back-about1Media: linear-gradient(
+    to right,
+    rgb(146, 155, 178),
+    rgb(0, 0, 0)
+  );
   //footer
   --color-font__footer: black;
   --color-background__footer: white;
@@ -136,6 +140,12 @@ html[data-theme="dark"] {
   --color-border-about3: rgb(20, 85, 255);
   --color-back-about4: rgb(20, 85, 255, 40%);
   --color-border-about4: rgb(20, 85, 255);
+
+  --color-back-about1Media: linear-gradient(
+    to right,
+    rgb(146, 155, 178),
+    rgb(0, 0, 0)
+  );
   //footer
   --color-font__footer: white;
   --color-background__footer: black;

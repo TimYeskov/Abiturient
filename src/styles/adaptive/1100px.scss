@@ -52,25 +52,7 @@
     }
     main {
       .banner {
-        .banner__title {
-          margin: 0 !important;
-          font-size: 50px !important;
-        }
-        h2 {
-          margin: 15px 0 !important;
-        }
-        .banner__wrapper {
-          @media (max-width: 900px) {
-            padding: 40px 0 40px 40px !important;
-          }
-        }
-
         .banner__about {
-          margin: 15px !important;
-          h3 {
-            font-size: 13px;
-            width: 230px !important;
-          }
           .banner-about__wrapper {
             h3 {
               max-width: 150px !important;
@@ -79,33 +61,16 @@
         }
       }
       .lessons {
-        padding: 0 35px;
-        margin-top: 70px !important;
-        margin-bottom: 70px !important;
         .lessons-description {
           div {
             h2 {
-              margin-bottom: 15px !important ;
-              font-size: 30px !important;
+              font-size: 40px !important;
             }
-          }
-          h3 {
-            margin-top: 15px !important;
-            font-size: 13px !important;
-            width: auto;
-            width: 300px !important;
-            margin-right: 0 !important;
           }
         }
 
         .lessons-container {
-          padding: 0 15px !important;
           .lessons-container__block {
-            padding: 5px !important;
-            width: 150px !important;
-            height: 70px !important;
-            h3 {
-            }
             h4 {
               font-size: 10px !important;
             }
@@ -121,84 +86,48 @@
         }
       }
       .underBanner {
-        padding-bottom: 70px !important;
         .underBanner__wrapper {
           div {
-            width: 100% !important;
+            div {
+              h3 {
+                max-width: 250px;
+                height: 50px;
+              }
+            }
             img {
               display: none;
             }
           }
         }
-        h3 {
-          font-size: 15px !important;
-          height: 35px !important;
-        }
-        h4 {
-          font-size: 10px !important;
-          margin-left: 0 !important;
-        }
       }
       .about {
-        h2 {
-          font-size: 36px !important;
-          padding: 35px 70px !important;
-        }
         .about-container {
-          padding: 0 0 70px 0 !important;
-          @media (max-width: 850px) {
-            padding-bottom: 35px !important;
-          }
-          .container__block {
-            h3 {
-              font-size: 15px !important;
+          .about-container__up,
+          .about-container__down {
+            display: block !important;
+            .container__block {
+              width: auto !important;
+              h4 {
+                max-width: 900px !important;
+              }
             }
-            h4 {
-              font-size: 13px !important;
+            .right {
+              overflow: hidden;
+              h4 {
+                margin-top: 0 !important;
+                float: right;
+              }
             }
           }
         }
       }
       .trial {
-        padding: 70px 15px !important;
-        @media (max-width: 850px) {
-          padding: 35px 15px !important;
-        }
-        .trial-header {
-          margin-bottom: 35px;
-          @media (max-width: 850px) {
-            margin-bottom: 35px !important;
-          }
-        }
-        h2 {
-          font-size: 36px !important;
-        }
         .trial__container {
-          .container__left {
-            h3 {
-              font-size: 30px !important;
-            }
-            h4 {
-              font-size: 15px !important;
-            }
-          }
           .container__right {
-            h3 {
-              font-size: 15px !important;
-              p {
-                font-size: 10px !important;
-              }
-            }
             button {
-              font-size: 10px !important;
-              img {
-                width: 10px;
-              }
+              font-size: 11px !important;
             }
-            h4 {
-              font-size: 15px !important;
-              margin-top: 20px !important;
-            }
+
             .container__blockimg {
               max-width: 100px !important;
               max-height: 100px !important;
@@ -208,38 +137,22 @@
               h4 {
                 font-size: 10px !important;
               }
-              div {
-                padding: 15px !important;
-              }
             }
           }
         }
       }
 
       .bloq {
-        padding: 100px 15px !important;
-        padding-top: 0 !important;
-        @media (max-width: 850px) {
-          padding-bottom: 70px !important;
-        }
-        .bloq-header {
-          margin-bottom: 35px !important;
-        }
-        h2 {
-          font-size: 36px !important;
-        }
         .bloq-container {
           .bloq-container__block {
             .bloqImg {
-              max-width: 210px !important;
+              max-width: 250px !important;
             }
             h3 {
               height: 20px !important;
               font-size: 14px !important;
             }
-            .bloq__type {
-              font-size: 10px;
-            }
+
             .bloq-type__desc {
               width: 210px !important;
               height: 120px !important;
@@ -249,16 +162,6 @@
         }
       }
       .feedback {
-        padding-left: 40px !important;
-        padding-right: 40px !important;
-
-        @media (max-width: 850px) {
-          padding: 35px 40px !important;
-          margin-bottom: 70px !important;
-        }
-        h2 {
-          font-size: 20px !important;
-        }
         form {
           input {
             font-size: 13px !important;
@@ -270,13 +173,14 @@
           }
         }
         .feedback__img {
-          top: 50px !important;
-          right: 90px !important;
-          @media (max-width: 1170px) {
-            top: 80px !important;
-            right: 70px !important;
-          }
+          position: relative;
+          height: 200px !important;
+          top: 40px !important;
+
           img {
+            position: relative;
+
+            top: 100px !important;
             @media (max-width: 1170px) {
               width: 300px !important;
             }
