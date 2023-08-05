@@ -262,6 +262,7 @@
             text-align: center !important;
             align-items: center !important;
             margin: 0 auto;
+            flex-wrap: wrap;
             h3 {
               min-width: 250px !important;
               text-align: center !important;
@@ -281,9 +282,12 @@
           }
           .bloq-type__desc {
             margin: 0 auto !important;
-            min-width: 330px !important;
+            min-width: 370px !important;
             text-align: center;
             margin-top: 20px !important;
+            @media (max-width: 400px) {
+              min-width: 300px !important;
+            }
           }
           .bloq__data {
             margin-top: 0 !important;
