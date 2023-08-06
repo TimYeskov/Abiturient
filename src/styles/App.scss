@@ -9,6 +9,13 @@
     margin-bottom: 0;
   }
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #83838398;
+}
 .App {
   background-image: var(--color-background);
   header {
